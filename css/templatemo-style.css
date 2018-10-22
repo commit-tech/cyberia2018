@@ -85,7 +85,7 @@ p {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1.6px;
-  padding: 12px 36px;
+  padding: 12px 36px;font
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
@@ -112,11 +112,72 @@ p {
   padding-bottom: 22px;
 }
 
+/* head section */
+#head {
+  background: url('../images/head-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 200px 0 300px;
+  overflow: hidden;
+  font: 14px/1.3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+        align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+#head .head-thumb {
+  text-align: center;
+}
+
+#head .btn {
+    background: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#head .btn-begin {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#head .btn:hover {
+  background: #f1c11a;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+#head .btn-success {
+    background: #ffffff;
+    color: #242424;
+    border-color: transparent;
+}
+
 #about,
 #service,
 #experience,
 #education,
-#contact {
+#contact{
   position: relative;
 }
 
@@ -338,7 +399,51 @@ a:hover, a:active, a:focus {
 
 }
 
+/*---------------------------------------
+    head section              
+-----------------------------------------*/
 
+#head .container {
+  padding-top: 10%;
+}
+
+#head h1 {
+  padding-top: 75px;
+  font-size: 60px;
+  padding-bottom: 18px;
+}
+
+#head .title {
+  margin-top: 100px;
+}
+
+#head .col-md-6 {
+  background: #f1e2d7;
+/* light blue color: #c3eafd; */
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#head .head-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+#head .head-thumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70vh;
+  padding: 0 45px 0 45px;
+}
 
 /*---------------------------------------
     Home section              
@@ -670,6 +775,13 @@ footer {
     padding-bottom: 12px;
   }
 
+  #head .head-thumb {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  #head .container,
   #home .container,
   #about .container, 
   #experience .container,
