@@ -456,48 +456,13 @@ a:hover, a:active, a:focus {
   padding: 0 45px 0 45px;
 }
 
-/*---------------------------------------
-    Home section
------------------------------------------*/
-
-#home h1 {
-  padding-bottom: 18px;
-}
-
-#home .col-md-6 {
-  background: #f1e2d7;
-/* light blue color: #c3eafd; */
-  padding-right: 0;
-  padding-left: 0;
-}
-
-#home .home-img {
-  background: url('../images/home-img.jpg') no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 100vh;
-}
-
-#home .home-thumb {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0 45px 0 45px;
-}
 
 /*---------------------------------------
    About section
 -----------------------------------------*/
 
 #about .about-img {
-    background: url('../images/about-img.jpg') no-repeat;
+    background: url('../images/photo1.jpg') no-repeat;
 }
 
 #about .about-thumb,
@@ -522,6 +487,8 @@ a:hover, a:active, a:focus {
   display: inline-block;
   padding-bottom: 8px;
 }
+
+
 
 /*---------------------------------------
     Service section
@@ -552,7 +519,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #experience .experience-img {
-  background: url('../images/experience-img.jpg') no-repeat;
+  background: url('../images/acadiafin.jpg') no-repeat;
 }
 
 #experience .media-heading {
@@ -578,7 +545,7 @@ a:hover, a:active, a:focus {
 }
 
 #education .education-img {
-  background: url('../images/education-img.jpg') no-repeat;
+  background: url('../images/instructors_ricky.jpg') no-repeat;
 }
 
 #education .media-heading {
@@ -594,7 +561,6 @@ a:hover, a:active, a:focus {
   color: #886D1E;
   font-weight: bold;
 }
-
 
 
 /*---------------------------------------
