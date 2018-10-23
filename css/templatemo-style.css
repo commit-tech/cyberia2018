@@ -21,7 +21,7 @@ html,body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typorgraphy
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -85,7 +85,7 @@ p {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 1.6px;
-  padding: 12px 36px;
+  padding: 12px 36px;font
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
@@ -112,18 +112,81 @@ p {
   padding-bottom: 22px;
 }
 
+/* head section */
+#head {
+  background: url('../images/head-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 200px 0 300px;
+  overflow: hidden;
+  font: 14px/1.3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+        align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+#head .head-thumb {
+  text-align: center;
+}
+
+#head .btn {
+    background: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#head .btn-begin {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#head .btn:hover {
+  background: #f1c11a;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+#head .btn-success {
+    background: #ffffff;
+    color: #242424;
+    border-color: transparent;
+}
+
 #about,
 #service,
 #experience,
 #education,
-#contact {
+#contact,
+#faq{
   position: relative;
 }
 
 #home .container,
-#about .container, 
+#about .container,
 #experience .container,
 #service .container,
+#faq .container,
 #education .container,
 #contact .container {
   width: 100%;
@@ -137,6 +200,7 @@ p {
 }
 
 #service,
+#faq,
 #quotes,
 footer {
   text-align: center;
@@ -165,25 +229,33 @@ footer {
 }
 
 .color-yellow {
-  color: #E3AE57;
+  color: #f2b84b;
+}
+
+.color-dark {
+  color: #262626;
 }
 
 .bg-yellow {
-  background: #E3AE57;
+  background: #f2b84b;
 }
 
 .bg-white {
-  background: #ffffff;
+  background: #f2e291;
 }
 
 .bg-dark {
-  background: #161616;
+  background: #262626;
+}
+
+.bg-red {
+  background: #f22233;
 }
 
 
 
 /*---------------------------------------
-    General               
+    General
 -----------------------------------------*/
 
 html{
@@ -218,7 +290,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Preloader section              
+    Preloader section
 -----------------------------------------*/
 
 .preloader {
@@ -268,7 +340,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Navigation section              
+    Navigation section
 -----------------------------------------*/
 
 .custom-navbar {
@@ -328,7 +400,7 @@ a:hover, a:active, a:focus {
     .custom-navbar {
         padding: 12px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
@@ -338,10 +410,54 @@ a:hover, a:active, a:focus {
 
 }
 
+/*---------------------------------------
+    head section
+-----------------------------------------*/
 
+#head .container {
+  padding-top: 10%;
+}
+
+#head h1 {
+  padding-top: 75px;
+  font-size: 60px;
+  padding-bottom: 18px;
+}
+
+#head .title {
+  margin-top: 100px;
+}
+
+#head .col-md-6 {
+  background: #f1e2d7;
+/* light blue color: #c3eafd; */
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#head .head-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+#head .head-thumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70vh;
+  padding: 0 45px 0 45px;
+}
 
 /*---------------------------------------
-    Home section              
+    Home section
 -----------------------------------------*/
 
 #home h1 {
@@ -376,10 +492,8 @@ a:hover, a:active, a:focus {
   padding: 0 45px 0 45px;
 }
 
-
-
 /*---------------------------------------
-   About section              
+   About section
 -----------------------------------------*/
 
 #about .about-img {
@@ -409,10 +523,8 @@ a:hover, a:active, a:focus {
   padding-bottom: 8px;
 }
 
-
-
 /*---------------------------------------
-    Service section              
+    Service section
 -----------------------------------------*/
 
 #service {
@@ -436,7 +548,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Experience section              
+    Experience section
 -----------------------------------------*/
 
 #experience .experience-img {
@@ -458,7 +570,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Education section              
+    Education section
 -----------------------------------------*/
 
 #education {
@@ -483,10 +595,8 @@ a:hover, a:active, a:focus {
   font-weight: bold;
 }
 
-
-
 /*---------------------------------------
-   Quotes section              
+   Quotes section
 -----------------------------------------*/
 
 #quotes {
@@ -517,9 +627,35 @@ a:hover, a:active, a:focus {
   padding-top: 32px;
 }
 
+/*---------------------------------------
+    faq section
+-----------------------------------------*/
+
+#faq {
+  background: #E9724C;
+}
+
+#faq p {
+  font-size: 18px;
+  line-height: 1em;
+}
+
+#faq h3{
+  font-size: 24px;
+}
+
+
+#faq .faq-thumb {
+  padding: 30px 22px 52px 22px;
+}
+
+#faq .faq-thumb .fa {
+  font-size: 42px;
+  padding-bottom: 22px;
+}
 
 /*---------------------------------------
-    Contact section              
+    Contact section
 -----------------------------------------*/
 
 #contact {
@@ -588,7 +724,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Footer section              
+   Footer section
 -----------------------------------------*/
 
 footer {
@@ -598,7 +734,7 @@ footer {
 
 
 /*---------------------------------------
-   Social icon             
+   Social icon
 -----------------------------------------*/
 
 .social-icon {
@@ -640,7 +776,7 @@ footer {
 
 
 /*---------------------------------------
-   Mobile Responsive         
+   Mobile Responsive
 -----------------------------------------*/
 
 @media only screen and (max-width: 580px) {
@@ -670,12 +806,20 @@ footer {
     padding-bottom: 12px;
   }
 
+  #head .head-thumb {
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  #head .container,
   #home .container,
-  #about .container, 
+  #about .container,
   #experience .container,
   #service .container,
   #education .container,
-  #contact .container {
+  #contact .container,
+  #faq .container {
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -703,3 +847,4 @@ footer {
     padding: 40px 0;
   }
 }
+

@@ -40,6 +40,7 @@
   -------------------------------------------------------------------------------*/
 
     function initParallax() {
+    $('#head').parallax("100%", 0.1);
     $('#home').parallax("100%", 0.1);
     $('#about').parallax("100%", 0.3);
     $('#service').parallax("100%", 0.2);
@@ -59,7 +60,7 @@
   -------------------------------------------------------------------------------*/
   
     $(function() {
-        $('.custom-navbar a, #home a').bind('click', function(event) {
+        $('.custom-navbar a, #head a, #home a').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
