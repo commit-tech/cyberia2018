@@ -75,7 +75,7 @@ body {
 .cd-horizontal-timeline .timeline {
 	position: relative;
 	height: 100px;
-	width: 90%;
+	width: 100%;
 	/*  max-width: 425px; */
 	margin: 0 auto;
 }

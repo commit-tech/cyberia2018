@@ -21,7 +21,7 @@ html,body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typorgraphy
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -177,14 +177,16 @@ p {
 #service,
 #experience,
 #education,
-#contact{
+#contact,
+#faq{
   position: relative;
 }
 
 #home .container,
-#about .container, 
+#about .container,
 #experience .container,
 #service .container,
+#faq .container,
 #education .container,
 #contact .container {
   width: 100%;
@@ -198,6 +200,7 @@ p {
 }
 
 #service,
+#faq,
 #quotes,
 footer {
   text-align: center;
@@ -226,25 +229,33 @@ footer {
 }
 
 .color-yellow {
-  color: #E3AE57;
+  color: #f2b84b;
+}
+
+.color-dark {
+  color: #262626;
 }
 
 .bg-yellow {
-  background: #E3AE57;
+  background: #f2b84b;
 }
 
 .bg-white {
-  background: #ffffff;
+  background: #f2e291;
 }
 
 .bg-dark {
-  background: #161616;
+  background: #262626;
+}
+
+.bg-red {
+  background: #f22233;
 }
 
 
 
 /*---------------------------------------
-    General               
+    General
 -----------------------------------------*/
 
 html{
@@ -279,7 +290,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Preloader section              
+    Preloader section
 -----------------------------------------*/
 
 .preloader {
@@ -329,7 +340,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Navigation section              
+    Navigation section
 -----------------------------------------*/
 
 .custom-navbar {
@@ -389,7 +400,7 @@ a:hover, a:active, a:focus {
     .custom-navbar {
         padding: 12px 0;
         border-bottom: 0;
-        background: 0 0; 
+        background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
@@ -400,7 +411,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    head section              
+    head section
 -----------------------------------------*/
 
 #head .container {
@@ -446,7 +457,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Home section              
+    Home section
 -----------------------------------------*/
 
 #home h1 {
@@ -481,10 +492,8 @@ a:hover, a:active, a:focus {
   padding: 0 45px 0 45px;
 }
 
-
-
 /*---------------------------------------
-   About section              
+   About section
 -----------------------------------------*/
 
 #about .about-img {
@@ -514,10 +523,8 @@ a:hover, a:active, a:focus {
   padding-bottom: 8px;
 }
 
-
-
 /*---------------------------------------
-    Service section              
+    Service section
 -----------------------------------------*/
 
 #service {
@@ -541,7 +548,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Experience section              
+    Experience section
 -----------------------------------------*/
 
 #experience .experience-img {
@@ -563,7 +570,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Education section              
+    Education section
 -----------------------------------------*/
 
 #education {
@@ -591,7 +598,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Quotes section              
+   Quotes section
 -----------------------------------------*/
 
 #quotes {
@@ -622,9 +629,35 @@ a:hover, a:active, a:focus {
   padding-top: 32px;
 }
 
+/*---------------------------------------
+    faq section
+-----------------------------------------*/
+
+#faq {
+  background: #E9724C;
+}
+
+#faq p {
+  font-size: 18px;
+  line-height: 1em;
+}
+
+#faq h3{
+  font-size: 24px;
+}
+
+
+#faq .faq-thumb {
+  padding: 30px 22px 52px 22px;
+}
+
+#faq .faq-thumb .fa {
+  font-size: 42px;
+  padding-bottom: 22px;
+}
 
 /*---------------------------------------
-    Contact section              
+    Contact section
 -----------------------------------------*/
 
 #contact {
@@ -693,7 +726,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Footer section              
+   Footer section
 -----------------------------------------*/
 
 footer {
@@ -703,7 +736,7 @@ footer {
 
 
 /*---------------------------------------
-   Social icon             
+   Social icon
 -----------------------------------------*/
 
 .social-icon {
@@ -745,7 +778,7 @@ footer {
 
 
 /*---------------------------------------
-   Mobile Responsive         
+   Mobile Responsive
 -----------------------------------------*/
 
 @media only screen and (max-width: 580px) {
@@ -783,11 +816,12 @@ footer {
 
   #head .container,
   #home .container,
-  #about .container, 
+  #about .container,
   #experience .container,
   #service .container,
   #education .container,
-  #contact .container {
+  #contact .container,
+  #faq .container {
     padding-right: 15px;
     padding-left: 15px;
   }
