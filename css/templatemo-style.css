@@ -143,6 +143,7 @@ p {
 
 #head .btn {
     background: transparent;
+    position: relative;
     border: 3px solid #ffffff;
     border-radius: 0px;
     color: #ffffff;
@@ -152,12 +153,13 @@ p {
     margin-top: 30px;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 30px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
 #head .btn-begin {
-  display: block;
+  display: inline-block;
 
   margin-left: auto;
   margin-right: auto;
@@ -456,7 +458,7 @@ a:hover, a:active, a:focus {
   -ms-flex-align: center;
   align-items: center;
   height: 70vh;
-  padding: 0 45px 0 45px;
+  padding: 40% 45px 30px 45px;
 }
 
 /*---------------------------------------
