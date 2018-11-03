@@ -21,256 +21,49 @@ http://www.templatemo.com/tm-498-stimulus
 <link rel="stylesheet" href="css/jquery.countdown.css">
 <link rel="stylesheet" href="css/timeline.css">
 
-
-
-
-
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
-
-
-
-<meta charset="UTF-8">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
-<title>CodePen - Animated SVG Travel Timeline</title>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-
-    <style>
-    html {
-box-sizing: border-box;
-}
-
-*, *:before, *:after {
-box-sizing: inherit;
-}
-
-.right {
-float: right;
-}
-
-/* ====== MIXINS ===== */
-.poster__heading, .poster__subheading {
-text-align: center;
-}
-
-.poster__heading {
-margin: 0 auto;
-}
-
-html {
-font-family: "Open Sans";
-font-size: 100%;
-}
-@media screen and (min-width: 31.25em) {
-html {
-  font-size: 105%;
-}
-}
-@media screen and (min-width: 50em) {
-html {
-  font-size: 115%;
-}
-}
-@media screen and (min-width: 75em) {
-html {
-  font-size: 125%;
-}
-}
-
-.btn--primary, .btn--comments {
-display: inline;
-text-decoration: none;
-padding: .45em 1.25em;
-text-transform: uppercase;
-font-weight: 400;
-letter-spacing: 1px;
-font-size: .75rem;
-border-radius: 25px;
-color: white;
-font-family: "Open Sans";
-transition: all 250ms ease;
-}
-
-.btn--primary {
-border: 1px solid white;
-}
-.btn--primary:hover {
-background-color: white;
-color: black;
-}
-
-.poster {
-height: 100vh;
-width: 100%;
-background-size: cover;
-background-position: center center;
-background-image: url("http://codepen.vincebrown.me/assets/images/snow-mountains.jpg");
-}
-.poster__heading {
-width: 95%;
-color: white;
-padding-top: 5.5rem;
-font-weight: 600;
-font-size: 2em;
-transition: all 400ms ease;
-}
-@media screen and (min-width: 31.25em) {
-.poster__heading {
-  font-size: 2.25em;
-}
-}
-@media screen and (min-width: 50em) {
-.poster__heading {
-  font-size: 2.75em;
-}
-}
-.poster__subheading {
-display: block;
-font-size: .3em;
-letter-spacing: 5px;
-font-weight: 400;
-text-transform: uppercase;
-color: #FF9639;
-padding-top: .8em;
-margin-bottom: .6em;
-}
-
-.btn--comments {
-background-color: rgba(255, 255, 255, 0.4);
-border: none;
-font-size: .6em;
-}
-.btn--comments:hover {
-background-color: rgba(255, 255, 255, 0.6);
-}
-
-.timeline-wrapper {
-position: relative;
-padding-bottom: 25em;
-background: linear-gradient(#000 10%, #283048 60%, #55679a 70%, rgba(255, 255, 255, 0));
-}
-.timeline-wrapper:after {
-content: '';
-display: block;
-background-image: url("http://codepen.vincebrown.me/assets/images/white-mountains.jpg");
-height: 500px;
-width: 100%;
-background-size: cover;
-position: absolute;
-background-position: 25% center;
-z-index: -10;
-bottom: 0;
-}
-
-.svg-timeline {
-position: absolute;
-margin-left: 50%;
--webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-display: none;
-}
-@media screen and (min-width: 50em) {
-.svg-timeline {
-  display: block;
-}
-}
-
-.timeline {
-transition: all 250ms ease;
-width: 90%;
-margin: 0 auto;
-}
-@media screen and (min-width: 31.25em) {
-.timeline {
-  width: 80%;
-}
-}
-@media screen and (min-width: 50em) {
-.timeline {
-  width: 95%;
-}
-}
-.timeline__item {
-margin-bottom: 4em;
-clear: both;
-}
-@media screen and (min-width: 50em) {
-.timeline__item {
-  width: 40%;
-}
-}
-.timeline__day {
-font-weight: 600;
-font-size: .9em;
-color: white;
-text-transform: uppercase;
-padding-bottom: .75em;
-}
-.timeline__day span {
-font-weight: 300;
-color: orange;
-text-transform: none;
-}
-.timeline__day-sum {
-color: white;
-font-weight: 300;
-font-size: .8em;
-display: block;
-margin-bottom: 1.5em;
-line-height: 1.5;
-}
-
-.clearfix:after {
-visibility: hidden;
-display: block;
-font-size: 0;
-content: " ";
-clear: both;
-height: 0;
-}
-
-.clearfix {
-display: inline-block;
-}
-
-/* start commented backslash hack \*/
-* html .clearfix {
-height: 1%;
-}
-
-.clearfix {
-display: block;
-}
-
-/* close commented backslash hack */
-
-  </style>
-
-<script>
-window.console = window.console || function(t) {};
-</script>
-
-
-
-<script>
-if (document.location.search.match(/type=embed/gi)) {
-  window.parent.postMessage("resize", "*");
-}
-</script>
-
-
 </head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<script>
+  $(function(){
 
+  var note = $('#note'),
+    ts = new Date(2018, 10, 1),
+    newYear = true;
 
+  if((new Date()) > ts){
+    // The new year is here! Count towards something else.
+    // Notice the *1000 at the end - time must be in milliseconds
+    ts = (new Date()).getTime() + 10*24*60*60*1000;
+    newYear = false;
+  }
 
+  $('#countdown').countdown({
+    timestamp : ts,
+    callback  : function(days, hours, minutes, seconds){
 
+      var message = "";
 
+      message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+      message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+      message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
+      message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+
+      if(newYear){
+       message += "left until the new year!";
+      }
+      else {
+       message += "left to 10 days from now!";
+      }
+
+      note.html(message);
+    }
+  });
+
+});
+</script>
 <!-- PRE LOADER -->
 
 <div class="preloader">
@@ -513,139 +306,49 @@ if (document.location.search.match(/type=embed/gi)) {
 <!-- Timeline Section -->
 
 <section id="timeline" class="parallax-section">
-
-
-<html lang="en">
-
-
-
-<body>
-
-  <main class="timeline-wrapper">
-    <div class="svg-timeline">
-      <svg width="8px" height="1490.7px" viewBox="0 0 8 1490.7">
-        <line id="timeline" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" x1="4" y1="0" x2="4" y2="1490.7"/>
-      </svg>
-    </div>
-    <ol class="timeline clearfix">
-      <li class="timeline__item right">
-          <h3 class="timeline__day dayFour"><span></span></h3>
-          <p class="timeline__day-sum"></p>
-        
-        </li>
-      <li class="timeline__item">
-        <h3 class="timeline__day">First Checkpoint<span> 22 October 2018</span></h3>
-        <p class="timeline__day-sum">Registration Opens</p>
-        
-      </li>
-      <li class="timeline__item right">
-        <h3 class="timeline__day dayTwo">Second Checkpoint <span> 13 November 2018</span></h3>
-        <p class="timeline__day-sum">Registration Closes</p>
-       
-      </li>
-      <li class="timeline__item">
-        <h3 class="timeline__day dayThree">Third Checkpoint <span> 13-15 December 2018</span></h3>
-        <p class="timeline__day-sum">Cyberia 2018</p>
-  
-      </li>
-     
-    </ol>
-  </main>
-</body>
-</html>
-<!--
-    <main class="timeline-wrapper">
-        <div class="svg-timeline">
-          <svg width="8px" height="1490.7px" viewBox="0 0 8 1490.7">
-            <line id="timeline" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-miterlimit="10" x1="4" y1="0" x2="4" y2="1490.7"/>
-          </svg>
-        </div>
-        <ol class="timeline clearfix">
-          <li class="timeline__item">
-            <h3 class="timeline__day">Day 1: <span>Helsinki, Finland</span></h3>
-            <p class="timeline__day-sum">Your adventure begins with a one-night stay in Helsinki, Finland's capital.</p>
-            <a href="#" class="btn--comments">19 Comments</a>
-          </li>
-          <li class="timeline__item right">
-            <h3 class="timeline__day dayTwo">Day 2: <span>Embarkation Day in Murmansk</span></h3>
-            <p class="timeline__day-sum">From Helsinki, your charter flight will take you to Murmansk, Russia, where you'll embark on your voyage to the North Pole and get acquainted with 50 Years of Victory, the world's largest and most powerful icebreaker.</p>
-            <a href="#" class="btn--comments">35 Comments</a>
-          </li>
-          <li class="timeline__item">
-            <h3 class="timeline__day dayThree">Day 3-6: <span>Northbound in the Arctic Ocean</span></h3>
-            <p class="timeline__day-sum">Watching the ship crush through the Arctic ice pack is a sight you'll never forget, made even more memorable by taking a helicopter flight for a thrilling aerial view of the ship and expansive Arctic Ocean.</p>
-            <p class="timeline__day-sum">You can expect days, and hours,to present variable sailing conditions this far north. The crossing from Murmansk to the North Pole can take us anywhere from 5-8 days. This means you'll have plenty of time to get to know your shipmates, stare out at the horizon, grab some drinks at the bar or do some laps in our indoor pool.</p>
-            <a href="#" class="btn--comments">72 Comments</a>
-          </li>
-          <li class="timeline__item right">
-            <h3 class="timeline__day dayFour">Day 7: <span>90&deg; North</span></h3>
-            <p class="timeline__day-sum">All of the anticipation of the past few days reaches a climax as you reach the North Pole! Many travelers find themselves overcome with emotion, while others are in a festive mood. Take photos, wave a flag, enjoy your moment! Later, everyone enjoys a champagne toast and a BBQ on the ice. Add an exclamation to your success by rising high in one of our hot air balloons to commemerate this great moment.</p>
-            <a href="#" class="btn--comments">132 Comments</a>
-          </li>
-          <li class="timeline__item">
-            <h3 class="timeline__day dayFive">Day 8: <span>Southbound in the Arctic Ocean</span></h3>
-            <p class="timeline__day-sum">Now you can sit back and relax, everything from here on out is a bonus! Expect more great memories as you head south, you may get lucky and spot a Polar Bear hunting a Seal.</p>
-            <a href="#" class="btn--comments">2 Comments</a>
-          </li>
-          <li class="timeline__item right">
-            <h3 class="timeline__day daySix">Day 9-10: <span>Franz Josef Land</span></h3>
-            <p class="timeline__day-sum">Now you can sit back and relax, everything from here on out is a bonus! Expect more great memories as you head south, you may get lucky and spot a Polar Bear hunting a Seal.</p>
-            <a href="#" class="btn--comments">12 Comments</a>
-          </li>
+  <div class="container experience">
+    <div class="row">
+     <div class="col-md-12">
+     <h4>TIMELINE</h4>
+     <section class="cd-horizontal-timeline container">
+      <div class="timeline">
+      <div class="events-wrapper">
+        <div class="events">
+        <ol>
+         <li><a href="#0" data-date="22/10/2018" class="selected"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+             &nbsp;<i class="fa fa-users" aria-hidden="true"></i></a></li>
+         <li><a href="#0" data-date="13/11/2018"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+         <li><a href="#0" data-date="10/12/2018"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
         </ol>
-      </main>
-
-<div class="container">
-  <h1 class="title">Responsive Slider Timeline</h1>
-  <div class="timeline">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11;" data-year="2011">
-          <div class="swiper-slide-content"><span class="timeline-year">2011</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12;" data-year="2012">
-          <div class="swiper-slide-content"><span class="timeline-year">2012</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13;" data-year="2013">
-          <div class="swiper-slide-content"><span class="timeline-year">2013</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14;" data-year="2014">
-          <div class="swiper-slide-content"><span class="timeline-year">2014</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15;" data-year="2015">
-          <div class="swiper-slide-content"><span class="timeline-year">2015</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16;" data-year="2016">
-          <div class="swiper-slide-content"><span class="timeline-year">2016</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</div>
--->
-
-
+        <span class="filling-line" aria-hidden="true"></span>
+        </div> <!-- .events -->
+      </div> <!-- .events-wrapper -->
+      </div> <!-- .timeline -->
+      <div class="events-content">
+      <ol>
+        <li class="selected" data-date="22/10/2018">
+        <h5>Registration Opens</h5>
+        <em>22 October 2018</em>
+        <p><strong>Team Manager</strong><br>
+         Ensure all tasks are handled along with project management.</p>
+         <br>
+        </li>
+        <li data-date="13/11/2018">
+        <h5>Registration Closed</h5>
+        <em>13 November 2018</em>
+        <p>Responsible for the conception, development, implementation and monitoring of internal communication campaigns. Management, enhancement and monitoring of the company's Intranet and Moodle. Planning and management of events.</p>
+        </li>
+        <li data-date="10/12/2018">
+        <h5>Cyberia 2018!</h5>
+        <em>10 December 2018 - 12 December 2018</em>
+        <p>Creation and development of websites within the framework of Páginas Amarelas' online products (copywriting, implementation of SEO techniques and web design).</p>
+        </li>
+      </ol>
+      </div> <!-- .events-content -->
+     </section>
+     </div> <!-- end div experience -->
+    </div> <!-- end row experience -->
+  </div> <!-- end container experience -->
 </section>
 
 <!-- FAQ Section -->
@@ -801,75 +504,6 @@ if (document.location.search.match(/type=embed/gi)) {
 <script type="text/javascript">
   $('.textbox').matchHeight();
 </script>
-
-<script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script>
-
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=11'></script>
-
-  
-
-    <script >
-      var controller = new ScrollMagic.Controller();
-TweenMax.set('#timeline',{visibility:0});
-
-var tweenOne =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"0%"}, {drawSVG:"10%"});  
- 
-var scene1 = new ScrollMagic.Scene({
-  triggerElement: '#timeline',
-}).setTween(tweenOne).addTo(controller); 
-    
-var tweenTwo =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"10%"}, {drawSVG:"20%"});
-
-var scene2 = new ScrollMagic.Scene({
-  triggerElement: '.dayTwo',
-}).setTween(tweenTwo).addTo(controller); 
-
-
-var tweenThree =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"20%"}, {drawSVG:"40%"});
-
-var scene3 = new ScrollMagic.Scene({
-  triggerElement: '.dayThree',
-}).setTween(tweenThree).addTo(controller); 
-
-
-var tweenFour =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"40%"}, {drawSVG:"65%"});
-
-var scene3 = new ScrollMagic.Scene({
-  triggerElement: '.dayFour',
-}).setTween(tweenFour).addTo(controller); 
- 
-var tweenFive =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"65%"}, {drawSVG:"85%"});
-
-var scene3 = new ScrollMagic.Scene({
-  triggerElement: '.dayFive',
-}).setTween(tweenFive).addTo(controller); 
-
-var tweenSix =
-new TweenMax.fromTo('#timeline',1,{drawSVG:"85%"}, {drawSVG:"102%"});
-
-var scene3 = new ScrollMagic.Scene({
-  triggerElement: '.daySix',
-}).setTween(tweenSix).addTo(controller);
-      //# sourceURL=pen.js
-    </script>
-
-
-
-  
-  
-
-  <script src="https://static.codepen.io/assets/editor/live/css_reload-2a5c7ad0fe826f66e054c6020c99c1e1c63210256b6ba07eb41d7a4cb0d0adab.js"></script>
-
-
 </body>
 
 </html>
