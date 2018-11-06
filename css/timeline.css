@@ -1,6 +1,7 @@
 /* Variables */
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+/*
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -10,11 +11,12 @@ body {
 }
 
 /* Layout */
+/*
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 /* Styling */
 .timeline {
