@@ -115,6 +115,8 @@ p {
 /* head section */
 #head {
   background: url('../images/head-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   max-height: 100%;
