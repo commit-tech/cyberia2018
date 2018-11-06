@@ -8,7 +8,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 body {
 	background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Monserrat', sans-serif;
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
@@ -37,6 +37,7 @@ h1 {
   font-size: 42px;
   padding-bottom: 14px;
   margin-bottom: 0px;
+  color: #ffffff;
 }
 
 h2 {
@@ -46,7 +47,8 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 23px;
   line-height: 32px;
   padding-bottom: 6px;
 }
@@ -70,8 +72,8 @@ strong {
 }
 
 p {
-    color: #888;
-    font-size: 16px;
+    font-family: 'PT Serif';
+    font-size: 18px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 0.2px;
@@ -236,7 +238,9 @@ footer {
 .color-white {
   color: #ffffff;
 }
-
+.color-gray {
+  color: #C8C8C8;
+}
 .color-yellow {
   color: #f2b84b;
 }
@@ -245,25 +249,40 @@ footer {
   color: #262626;
 }
 
+.color-black {
+  color: #000000;
+}
 .bg-yellow {
   background: #f2b84b;
   padding-right: 0px;
   padding-left: 0px;
   min-height: 50px;
 }
+.bg-pale {
+  background: #fffaf0;
+}
 
 .bg-white {
-  background: #f2e291;
   padding-right: 0px;
   padding-left: 0px;
   min-height: 50px;
+  background: #ffffff;
 }
 
 .bg-dark {
+  background: #000000;
+}
+.bg-dark2 {
+  background: #121212;
+}
+.bg-dark3 {
   background: #262626;
   padding-right: 0px;
   padding-left: 0px;
   min-height: 50px;
+}
+.bg-dark4 {
+  background: #323232;
 }
 
 .bg-red {
@@ -553,7 +572,7 @@ Service section
 }
 
 #service p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
 }
 
@@ -599,7 +618,7 @@ Education section
 }
 
 #education .education-img {
-  background: url('../images/instructors_ricky.jpg') no-repeat;
+  background: url('../images/instructorimage.jpg') no-repeat;
 }
 
 #education .media-heading {
@@ -649,7 +668,16 @@ Quotes section
 }
 
 /*---------------------------------------
-faq section
+    timeline section
+-----------------------------------------*/
+#timeline {
+  padding-left: 30%;
+}
+
+
+
+/*---------------------------------------
+    faq section
 -----------------------------------------*/
 
 #faq {
