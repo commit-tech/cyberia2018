@@ -116,7 +116,7 @@ p {
 #head {
   background: url('../images/website logo.png');
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   max-height: 100%;
