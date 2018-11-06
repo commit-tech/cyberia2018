@@ -114,9 +114,9 @@ p {
 
 /* head section */
 #head {
-  background: url('../images/head-wallpaper.jpg');
+  background: url('../images/website logo.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   max-height: 100%;
@@ -162,10 +162,11 @@ p {
 
 #head .btn-begin {
   display: inline-block;
-
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  font-size: 32px;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 35%;
 }
 
 #head .btn:hover {
