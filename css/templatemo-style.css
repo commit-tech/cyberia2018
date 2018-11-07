@@ -116,7 +116,7 @@ p {
 
 /* head section */
 #head {
-  background: url('../images/website logo.png');
+  background: url('../images/website logo.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -218,7 +218,7 @@ footer {
 
 #experience,
 #education {
-  background: #E9724C;
+  background: #000000;
 }
 
 .background-image {
@@ -238,9 +238,11 @@ footer {
 .color-white {
   color: #ffffff;
 }
+
 .color-gray {
   color: #C8C8C8;
 }
+
 .color-yellow {
   color: #f2b84b;
 }
@@ -252,47 +254,43 @@ footer {
 .color-black {
   color: #000000;
 }
+
 .bg-yellow {
   background: #f2b84b;
   padding-right: 0px;
   padding-left: 0px;
-  min-height: 50px;
+  min-height: 150px;
 }
+
 .bg-pale {
   background: #fffaf0;
 }
 
 .bg-white {
-  padding-right: 0px;
-  padding-left: 0px;
-  min-height: 50px;
   background: #ffffff;
 }
 
 .bg-dark {
   background: #000000;
 }
+
 .bg-dark2 {
   background: #121212;
 }
+
 .bg-dark3 {
   background: #262626;
-  padding-right: 0px;
-  padding-left: 0px;
-  min-height: 50px;
 }
+
 .bg-dark4 {
   background: #323232;
 }
 
-.bg-red {
-  background: #f22233;
+#faq .faq-textbox {
   padding-right: 0px;
   padding-left: 0px;
-  min-height: 50px;
+  min-height: 150px;
 }
-
-
 
 /*---------------------------------------
     General
@@ -568,7 +566,7 @@ Service section
 -----------------------------------------*/
 
 #service {
-  background: #E9724C;
+  background: #FFFFFF;
 }
 
 #service p {
@@ -681,7 +679,7 @@ Quotes section
 -----------------------------------------*/
 
 #faq {
-  background: #E9724C;
+  background: #000000;
 }
 
 #faq p {
@@ -708,7 +706,7 @@ Contact section
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #000000;
 }
 
 #contact .contact-form,
