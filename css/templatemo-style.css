@@ -116,7 +116,9 @@ p {
 
 /* head section */
 #head {
-  background: url('../images/head-wallpaper.jpg');
+  background: url('../images/website logo.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   max-height: 100%;
@@ -162,10 +164,11 @@ p {
 
 #head .btn-begin {
   display: inline-block;
-
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-size: 32px;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 35%;
 }
 
 #head .btn:hover {
@@ -215,7 +218,7 @@ footer {
 
 #experience,
 #education {
-  background: #E9724C;
+  background: #000000;
 }
 
 .background-image {
@@ -235,9 +238,11 @@ footer {
 .color-white {
   color: #ffffff;
 }
+
 .color-gray {
   color: #C8C8C8;
 }
+
 .color-yellow {
   color: #f2b84b;
 }
@@ -249,9 +254,14 @@ footer {
 .color-black {
   color: #000000;
 }
+
 .bg-yellow {
   background: #f2b84b;
+  padding-right: 0px;
+  padding-left: 0px;
+  min-height: 150px;
 }
+
 .bg-pale {
   background: #fffaf0;
 }
@@ -263,21 +273,32 @@ footer {
 .bg-dark {
   background: #000000;
 }
+
 .bg-dark2 {
   background: #121212;
 }
+
 .bg-dark3 {
   background: #262626;
 }
+
 .bg-dark4 {
   background: #323232;
 }
 
-.bg-red {
-  background: #f22233;
+#faq .faq-textbox {
+  padding-right: 0px;
+  padding-left: 0px;
+  min-height: 150px;
 }
 
-
+#faq .faq-spam {
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 20px 40px;
+}
 
 /*---------------------------------------
     General
@@ -413,30 +434,30 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
-    border-color: transparent;
+  background: #E3AE57;
+  border-color: transparent;
 }
 
 @media(min-width:768px) {
-    .custom-navbar {
-        padding: 12px 0;
-        border-bottom: 0;
-        background: 0 0;
-    }
-    .custom-navbar.top-nav-collapse {
-        background: #ffffff;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-        padding: 0;
-    }
+  .custom-navbar {
+    padding: 12px 0;
+    border-bottom: 0;
+    background: 0 0;
+  }
+  .custom-navbar.top-nav-collapse {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+    padding: 0;
+  }
 
 }
 
 /*---------------------------------------
-    head section
+head section
 -----------------------------------------*/
 
 #head .container {
@@ -455,7 +476,7 @@ a:hover, a:active, a:focus {
 
 #head .col-md-6 {
   background: #f1e2d7;
-/* light blue color: #c3eafd; */
+  /* light blue color: #c3eafd; */
   padding-right: 0;
   padding-left: 0;
 }
@@ -482,7 +503,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Home section
+Home section
 -----------------------------------------*/
 
 #home h1 {
@@ -491,7 +512,7 @@ a:hover, a:active, a:focus {
 
 #home .col-md-6 {
   background: #f1e2d7;
-/* light blue color: #c3eafd; */
+  /* light blue color: #c3eafd; */
   padding-right: 0;
   padding-left: 0;
 }
@@ -518,11 +539,11 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-   About section
+About section
 -----------------------------------------*/
 
 #about .about-img {
-    background: url('../images/photo1.jpg') no-repeat;
+  background: url('../images/photo1.jpg') no-repeat;
 }
 
 #about .about-thumb,
@@ -549,11 +570,11 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Service section
+Service section
 -----------------------------------------*/
 
 #service {
-  background: #E9724C;
+  background: #FFFFFF;
 }
 
 #service p {
@@ -573,7 +594,7 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-    Experience section
+Experience section
 -----------------------------------------*/
 
 #experience .experience-img {
@@ -595,7 +616,7 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Education section
+Education section
 -----------------------------------------*/
 
 #education {
@@ -621,25 +642,25 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-   Quotes section
+Quotes section
 -----------------------------------------*/
 
 #quotes {
-    background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    position: relative;
-    padding: 100px 0px;
+  background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  position: relative;
+  padding: 100px 0px;
 }
 
 #quotes .overlay {
-    background: #121212;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 0.7;
+  background: #121212;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
 }
 
 #quotes .fa {
@@ -666,7 +687,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #faq {
-  background: #E9724C;
+  background: #000000;
 }
 
 #faq p {
@@ -680,7 +701,7 @@ a:hover, a:active, a:focus {
 
 
 #faq .faq-thumb {
-  padding: 30px 22px 52px 22px;
+  padding: 30px 0px 52px 0px;
 }
 
 #faq .faq-thumb .fa {
@@ -689,11 +710,11 @@ a:hover, a:active, a:focus {
 }
 
 /*---------------------------------------
-    Contact section
+Contact section
 -----------------------------------------*/
 
 #contact {
-  background: #E9724C;
+  background: #000000;
 }
 
 #contact .contact-form,
@@ -758,59 +779,59 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Footer section
+Footer section
 -----------------------------------------*/
 
 footer {
-    padding: 140px 0px;
+  padding: 140px 0px;
 }
 
 
 
 /*---------------------------------------
-   Social icon
+Social icon
 -----------------------------------------*/
 
 .social-icon {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .social-icon li {
-    display: inline-block;
-    list-style: none;
+  display: inline-block;
+  list-style: none;
 }
 
 .social-icon li a {
-    border: 2px solid transparent;
-    color: #999;
-    border-radius: 100px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    margin: 22px 4px 10px 4px;
+  border: 2px solid transparent;
+  color: #999;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  margin: 22px 4px 10px 4px;
 }
 
 .social-icon li a:hover {
-    background: #E3AE57;
-    border-color: #ffffff;
-    color: #ffffff;
-    transform: scale(1.1);
+  background: #E3AE57;
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 
 
 /*---------------------------------------
-   Mobile Responsive
+Mobile Responsive
 -----------------------------------------*/
 
 @media only screen and (max-width: 580px) {
