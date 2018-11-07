@@ -292,6 +292,14 @@ footer {
   min-height: 150px;
 }
 
+#faq .faq-spam {
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 20px 40px;
+}
+
 /*---------------------------------------
     General
 -----------------------------------------*/

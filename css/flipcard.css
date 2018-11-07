@@ -20,6 +20,9 @@
   width: 100%;
   height: 100%;
   padding: 20px 20px;
+  font-family: 'Monserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
   backface-visibility: hidden;
   /*box-shadow: 0 0 4px #000;*/
 }
@@ -30,7 +33,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: auto 40px;
+  font-family: 'PT Serif';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  vertical-align: middle;
+  padding: 20px 40px;
   margin: auto;
   transform: rotateY(180deg);
   background: #FFFFFF;
