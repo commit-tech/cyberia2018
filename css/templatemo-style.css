@@ -297,6 +297,7 @@ footer {
 }
 
 #faq .faq-spam {
+  display: hidden;
   font-family: 'PT Serif';
   font-size: 18px;
   font-weight: 300;
