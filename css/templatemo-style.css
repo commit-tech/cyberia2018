@@ -116,7 +116,7 @@ p {
 
 /* head section */
 #head {
-  background: url('../images/website logo.jpeg');
+  /*background: url('../images/website logo.jpeg');*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
