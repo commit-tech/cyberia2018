@@ -13,9 +13,9 @@
 
 .about-thumb-img {
     background-image: url("../images/photo1.jpg");
-    background-repeat: no-repeat;
-    background-position: 60% 45%;
-    height: 100vh;
+    background-position: right;
+    background-size: cover;
+    height: 80vh;
 }
 
 .sign-up-button {
