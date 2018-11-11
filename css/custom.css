@@ -15,7 +15,17 @@
     background-image: url("../images/photo1.jpg");
     background-position: right;
     background-size: cover;
-    height: 80vh;
+    min-height: 75vh;
+}
+
+/* Height for the 4 small boxes after about section */
+.col-sm-3 {
+    min-height: 40vh;
+}
+
+/* Height for remaining items, must match .background-image in templatemo-style.css*/
+.col-sm-6 {
+    min-height: 75vh;
 }
 
 .sign-up-button {
@@ -95,5 +105,16 @@
         line-height: 1.15;
         top: 26%;
         left: 18%;
+    }
+
+    #about {
+        margin-top: -3em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .col-sm-6 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
